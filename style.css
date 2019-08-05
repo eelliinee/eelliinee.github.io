@@ -21,6 +21,15 @@ hr {
     border-color: rgb(0, 146, 154);
 }
 
+#filterKnoppen button{
+    cursor: pointer;
+}
+
+#filterKnoppen button:hover, #filterKnoppen button:focus{
+    border-color: rgba(0, 135, 143,0.5);
+}
+
+
 .flex-container {
     display: flex;
     flex-wrap: wrap;
@@ -33,6 +42,7 @@ hr {
     margin: 10px;
     padding: 10px;
     width: 20%;
+    display: none;/* default hidden */
 }
 
 .inhoud:hover {
