@@ -21,15 +21,18 @@ hr {
     border-color: rgb(0, 146, 154);
 }
 
-.kolom {
-    float: left;
-    width: 25%;
+.flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: center;
 }
 
 .inhoud {
     box-shadow: 0 4px 8px rgba(0,0,0,0.2);
     margin: 10px;
     padding: 10px;
+    width: 20%;
 }
 
 .inhoud:hover {
@@ -52,13 +55,19 @@ hr {
 
 
 @media screen and (max-width: 900px) {
-    .kolom {
-      width: 50%;
+    .inhoud {
+      width: 40%;
     }
 }
 
 @media screen and (max-width: 600px) {
-    .kolom {
-      width: 100%;
+    .inhoud {
+      width: 80%;
     }
 }
+
+@media (max-width: 400px) {
+    .flex-grid {
+      display: block;
+    }
+  }
