@@ -29,6 +29,9 @@ hr {
     border-color: rgba(0, 135, 143,0.5);
 }
 
+#filterKnoppen p {
+    color: #999999
+}
 
 .flex-container {
     display: flex;
